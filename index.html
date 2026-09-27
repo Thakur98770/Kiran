@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Kiran Cosmetics and Gift Centre | Rama Mandi, Jalandhar</title>
+    <meta name="description" content="Kiran Cosmetics and Gift Centre, Rama Mandi, Jalandhar - 100% authentic makeup, skincare, perfumes, artificial jewellery and custom bridal & festival gift hampers. Open 7 days, 8 AM - 9 PM.">
+    <meta name="theme-color" content="#7c1a35">
+    <meta name="author" content="Kiran Cosmetics and Gift Centre">
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Kiran Cosmetics and Gift Centre | Rama Mandi, Jalandhar">
+    <meta property="og:description" content="100% authentic cosmetics, luxury skincare, designer perfumes and fully customized bridal & festival gift hampers in Rama Mandi, Jalandhar.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:locale" content="en_IN">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23b01a40'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%23f1c40f' font-family='serif'%3EK%3C/text%3E%3C/svg%3E">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Kiran Cosmetics and Gift Centre",
+        "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "8, Dhilwan, Talhan Road, Rama Mandi",
+            "addressLocality": "Jalandhar",
+            "addressRegion": "Punjab",
+            "postalCode": "144005",
+            "addressCountry": "IN"
+        },
+        "telephone": "+918699631881",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "250"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "08:00",
+            "closes": "21:00"
+        }
+    }
+    </script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <!-- Tailwind Theme Config (blocking, must run right after the CDN) -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN (SVG+JS build: renders icons without an external stylesheet) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" data-auto-replace-svg="nest"></script>
+    
+    <!-- Alpine.js CDN for lightweight interactive state -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Custom Style tweaks -->
+
+</head>
+
+<body x-data="kiranApp()" @keydown.escape.window="closeAllOverlays()" class="text-gray-800 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-brand-950 text-white text-[11px] sm:text-sm py-2 px-3 sm:px-4 text-center font-medium z-50 relative">
+        <div class="w-full mx-auto flex justify-between items-center gap-3 lg:gap-6">
+            <span class="hidden lg:inline-flex items-center gap-2 shrink-0">
+                <i class="fa-solid fa-store text-gold-400"></i> <span class="whitespace-nowrap">Store Hours: 8:00 AM - 9:00 PM (7 Days Open)</span>
+            </span>
+            <span class="min-w-0 font-semibold tracking-wide flex items-center justify-center gap-1.5 sm:gap-2">
+                <span class="hidden sm:inline bg-gold-500 text-brand-950 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase shrink-0">Special Offer</span>
+                <span>Free Custom Gift Packaging above ₹999!</span>
+            </span>
+            <a href="tel:+918699631881" class="hidden sm:flex items-center gap-1 hover:text-gold-400 transition-colors shrink-0 py-1">
+                <i class="fa-solid fa-phone text-xs"></i> <span class="whitespace-nowrap">+91 86996 31881</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-brand-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo & Brand Name -->
+                <a href="#hero" class="flex items-center gap-2 sm:gap-3 group min-w-0 shrink">
+                    <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-brand-700 via-brand-600 to-gold-500 p-0.5 shadow-md group-hover:scale-105 transition-transform shrink-0">
+                        <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-spa text-brand-600 text-base sm:text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="min-w-0">
+                        <div class="flex items-center gap-2">
+                            <span class="font-serif font-bold text-base sm:text-xl md:text-2xl text-brand-900 tracking-tight leading-none truncate">Kiran Cosmetics</span>
+                            <span class="hidden xl:inline-block bg-brand-100 text-brand-800 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-brand-200 shrink-0">
+                                4.9 ★ Rating
+                            </span>
+                        </div>
+                        <p class="text-[10px] sm:text-[11px] text-gray-500 font-medium tracking-wide truncate">
+                            <span class="sm:hidden">&amp; GIFT CENTRE</span><span class="hidden sm:inline">&amp; GIFT CENTRE • RAMA MANDI</span>
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Navigation Links (Desktop) -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-700">
+                    <a href="#hero" class="hover:text-brand-600 transition-colors">Home</a>
+                    <a href="#catalog" class="hover:text-brand-600 transition-colors">Shop Catalog</a>
+                    <a href="#hamper-builder" class="text-brand-700 bg-brand-50 hover:bg-brand-100 px-3 py-1.5 rounded-full border border-brand-200 flex items-center gap-1.5 transition-all">
+                        <i class="fa-solid fa-gift text-brand-600"></i> Gift Builder
+                    </a>
+                    <a href="#why-us" class="hover:text-brand-600 transition-colors">Why Choose Us</a>
+                    <a href="#reviews" class="hover:text-brand-600 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors">Visit Store</a>
+                </nav>
+
+                <!-- Search & Quick Action Buttons -->
+                <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+                    <!-- Search Modal Trigger -->
+                    <button @click="openSearch()" aria-label="Search products" class="p-2 sm:p-2.5 rounded-full text-gray-600 hover:text-brand-600 hover:bg-brand-50 active:bg-brand-100 transition-colors">
+                        <i class="fa-solid fa-magnifying-glass text-base sm:text-lg"></i>
+                    </button>
+
+                    <!-- Directions Quick Button -->
+                    <a href="https://maps.google.com/?cid=17685842643007552533" target="_blank" rel="noopener noreferrer" 
+                       class="hidden sm:flex items-center gap-1.5 text-xs font-bold text-brand-800 bg-brand-100/80 hover:bg-brand-200 px-3 py-2 rounded-xl transition-all border border-brand-200 whitespace-nowrap">
+                        <i class="fa-solid fa-location-dot text-brand-600"></i> Directions
+                    </a>
+
+                    <!-- Cart Drawer Trigger Button -->
+                    <button @click="cartDrawerOpen = true" aria-label="Open shopping bag" class="relative p-2 sm:p-2.5 bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 px-2.5 sm:px-3.5">
+                        <i class="fa-solid fa-bag-shopping text-base"></i>
+                        <span class="hidden md:inline text-xs font-bold uppercase tracking-wider">Cart</span>
+                        <span x-text="cartItemCount" class="bg-gold-500 text-brand-950 font-extrabold text-xs min-w-[22px] text-center px-1.5 py-0.5 rounded-full">0</span>
+                    </button>
+
+                    <!-- Mobile Menu Trigger -->
+                    <button @click="mobileNavOpen = !mobileNavOpen" :aria-expanded="mobileNavOpen" aria-controls="mobile-nav" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-brand-50">
+                        <i class="fa-solid text-xl" :class="mobileNavOpen ? 'fa-xmark' : 'fa-bars-staggered'"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-nav" x-show="mobileNavOpen" x-transition x-cloak class="lg:hidden bg-white border-b border-brand-100 px-4 pt-3 pb-6 space-y-3 max-h-[calc(100dvh-5rem)] overflow-y-auto">
+            <a href="#hero" @click="mobileNavOpen = false" class="block py-2 text-gray-800 font-semibold border-b border-gray-100">Home</a>
+            <a href="#catalog" @click="mobileNavOpen = false" class="block py-2 text-gray-800 font-semibold border-b border-gray-100">Shop Catalog</a>
+            <a href="#hamper-builder" @click="mobileNavOpen = false" class="block py-2 text-brand-700 font-bold border-b border-gray-100 flex items-center gap-2">
+                <i class="fa-solid fa-gift text-brand-600"></i> Custom Gift Hamper Builder
+            </a>
+            <a href="#why-us" @click="mobileNavOpen = false" class="block py-2 text-gray-800 font-semibold border-b border-gray-100">Why Choose Us</a>
+            <a href="#reviews" @click="mobileNavOpen = false" class="block py-2 text-gray-800 font-semibold border-b border-gray-100">Customer Reviews</a>
+            <a href="#contact" @click="mobileNavOpen = false" class="block py-2 text-gray-800 font-semibold">Store Location & Timing</a>
+            
+            <div class="pt-2 flex gap-2">
+                <a href="tel:+918699631881" class="flex-1 text-center py-2.5 bg-brand-600 text-white font-bold rounded-xl text-sm">
+                    <i class="fa-solid fa-phone mr-1"></i> Call Store
+                </a>
+                <a href="https://maps.google.com/?cid=17685842643007552533" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2.5 bg-gray-100 text-gray-800 font-bold rounded-xl text-sm">
+                    <i class="fa-solid fa-map-pin mr-1"></i> Directions
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden pt-8 pb-16 sm:pt-10 lg:pt-16 lg:pb-24 bg-gradient-to-b from-brand-50/70 via-cream to-white scroll-mt-24">
+        <!-- Decorative Blur Circles -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-200/40 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-gold-400/20 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Rating Badge -->
+                    <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-brand-200 shadow-sm text-xs md:text-sm font-semibold text-brand-900">
+                        <span class="flex text-gold-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="font-bold text-gray-900">4.9 ★ Top Rated</span>
+                        <span class="text-gray-400">|</span>
+                        <span class="text-gray-600">Rama Mandi, Jalandhar</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                        Glow Everyday & <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-brand-700 via-brand-600 to-gold-600 bg-clip-text text-transparent">Gift Special Moments</span>
+                    </h1>
+
+                    <!-- Subheading -->
+                    <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Jalandhar's favorite destination for 100% authentic cosmetics, luxury skincare, designer perfumes, artificial jewellery, and fully customized bridal & festival gift hampers.
+                    </p>
+
+                    <!-- Quick Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#catalog" class="w-full sm:w-auto px-7 py-3.5 bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 text-white font-bold rounded-2xl shadow-lg shadow-brand-700/20 hover:shadow-xl transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-bag-shopping"></i> Explore Catalog
+                        </a>
+                        <a href="#hamper-builder" class="w-full sm:w-auto px-7 py-3.5 bg-white hover:bg-brand-50 text-brand-900 font-bold rounded-2xl border-2 border-brand-300 shadow-sm hover:shadow transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-brand-600"></i> Build Custom Hamper
+                        </a>
+                    </div>
+
+                    <!-- Key Brand Tags -->
+                    <div class="pt-6 border-t border-brand-100 flex flex-wrap justify-center lg:justify-start items-center gap-6 text-xs font-semibold text-gray-600">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-600"></i> 100% Genuine Brands</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-600"></i> Best Retail & Wholesale Prices</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-brand-600"></i> Instant Gift Customization</span>
+                    </div>
+                </div>
+
+                <!-- Right Visual Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Image Card -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Kiran Cosmetics &amp; Gift Centre - curated bridal gift hampers" width="800" height="420" fetchpriority="high" decoding="async" class="w-full h-[300px] sm:h-[380px] lg:h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-transparent to-transparent"></div>
+                            
+                            <div class="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6 sm:right-6 text-white space-y-1">
+                                <span class="bg-gold-500 text-brand-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-full inline-block">In-Store Feature</span>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold">Bridal &amp; Celebration Hampers</h3>
+                                <p class="text-[11px] sm:text-xs text-brand-100">Handcrafted with premium beauty items &amp; bespoke packaging.</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Badge 1 -->
+                        <div class="absolute -top-4 -left-2 sm:-top-6 sm:-left-6 glass-card p-3 sm:p-4 rounded-2xl shadow-xl hidden md:flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center text-lg font-bold shrink-0">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-semibold">Customer Loyalty</p>
+                                <p class="text-sm font-bold text-gray-900 whitespace-nowrap">5,000+ Happy Locals</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Badge 2 -->
+                        <div class="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 glass-card p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gold-500 text-brand-950 flex items-center justify-center text-lg font-bold shrink-0">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-semibold">Store Location</p>
+                                <p class="text-sm font-bold text-gray-900 whitespace-nowrap">Rama Mandi, Jalandhar</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Highlights Strip -->
+    <section class="bg-brand-900 text-white py-8 border-y border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="space-y-1 p-2">
+                    <i class="fa-solid fa-certificate text-2xl text-gold-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">100% Genuine Products</h4>
+                    <p class="text-xs text-brand-200">Sourced directly from authorized brand distributors</p>
+                </div>
+                <div class="space-y-1 p-2">
+                    <i class="fa-solid fa-gift text-2xl text-gold-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Bespoke Gift Packaging</h4>
+                    <p class="text-xs text-brand-200">Custom ribbons, boxes & floral accents</p>
+                </div>
+                <div class="space-y-1 p-2">
+                    <i class="fa-solid fa-tags text-2xl text-gold-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Wholesale & Retail</h4>
+                    <p class="text-xs text-brand-200">Unmatched prices & festive discounts</p>
+                </div>
+                <div class="space-y-1 p-2">
+                    <i class="fa-solid fa-headset text-2xl text-gold-400 mb-2"></i>
+                    <h4 class="font-bold text-sm">Expert Beauty Guidance</h4>
+                    <p class="text-xs text-brand-200">Friendly staff to help pick your perfect shade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Product Showcase & Catalog Section -->
+    <section id="catalog" class="py-16 md:py-24 bg-pattern scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">
+                    Curated Beauty & Gifts
+                </span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Explore Our In-Store Collection</h2>
+                <p class="text-gray-600 text-sm md:text-base">Browse top-rated makeup, luxury skincare serums, fragrance sets, and gift boxes. Add to your bag or order directly via WhatsApp.</p>
+            </div>
+
+            <!-- Controls & Filters Bar -->
+            <div class="bg-white p-4 md:p-6 rounded-3xl shadow-md border border-brand-100 mb-10 space-y-4">
+                
+                <!-- Search and Sorting Bar -->
+                <div class="flex flex-col md:flex-row gap-4 justify-between items-stretch md:items-center">
+                    <!-- Search Input -->
+                    <div class="relative w-full md:w-80 shrink-0">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        <input type="search" x-model="searchQuery" placeholder="Search product, brand or item..." aria-label="Search products in catalog"
+                               class="w-full pl-10 pr-9 py-2.5 rounded-xl border border-gray-200 text-base sm:text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-200 transition-all">
+                        <button x-show="searchQuery.length > 0" @click="searchQuery = ''" aria-label="Clear search" class="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-600">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <!-- Category Pills -->
+                    <div class="-mx-4 px-4 md:mx-0 md:px-0 flex items-center gap-2 overflow-x-auto w-full md:w-auto pb-1 scrollbar-none snap-x snap-mandatory">
+                        <template x-for="cat in categories" :key="cat.id">
+                            <button @click="selectedCategory = cat.id" 
+                                    :aria-pressed="selectedCategory === cat.id"
+                                    :class="selectedCategory === cat.id ? 'bg-brand-700 text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-brand-50'"
+                                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 shrink-0 snap-start">
+                                <i :class="cat.icon" class="text-xs"></i>
+                                <span x-text="cat.name"></span>
+                            </button>
+                        </template>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+                <template x-for="product in filteredProducts" :key="product.id">
+                    <div class="bg-white rounded-3xl overflow-hidden border border-brand-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group relative">
+                        
+                        <!-- Badge -->
+                        <span x-show="product.badge" x-text="product.badge" 
+                              class="absolute top-3 left-3 z-10 bg-brand-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow"></span>
+
+                        <!-- Product Image Box -->
+                        <div class="relative h-52 sm:h-56 bg-brand-50/50 overflow-hidden cursor-pointer" @click="openQuickView(product)">
+                            <img :src="product.image" :alt="product.name" loading="lazy" decoding="async" width="500" height="500" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                            
+                            <!-- Quick View Overlay Button -->
+                            <button @click.stop="openQuickView(product)" class="absolute bottom-3 right-3 bg-white/90 hover:bg-white text-gray-800 p-2.5 rounded-xl shadow text-xs font-bold transition-all flex items-center gap-1">
+                                <i class="fa-regular fa-eye"></i> Quick View
+                            </button>
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+                            <div>
+                                <div class="flex justify-between items-center text-xs text-gray-500 font-semibold mb-1 gap-2">
+                                    <span x-text="product.brand" class="text-brand-700 font-bold uppercase tracking-wide truncate"></span>
+                                    <span class="flex items-center gap-1 text-gold-500 font-bold shrink-0">
+                                        <i class="fa-solid fa-star"></i> <span x-text="product.rating"></span>
+                                    </span>
+                                </div>
+                                <h3 class="font-bold text-gray-900 text-base leading-snug hover:text-brand-700 cursor-pointer transition-colors" @click="openQuickView(product)" x-text="product.name"></h3>
+                                <p class="text-xs text-gray-500 line-clamp-2 mt-1" x-text="product.shortDesc"></p>
+                            </div>
+
+                            <!-- Price & Add Button -->
+                            <div class="pt-3 border-t border-gray-100 flex items-center justify-between gap-2">
+                                <div class="min-w-0">
+                                    <div class="flex items-baseline gap-1.5">
+                                        <span class="text-lg font-extrabold text-brand-900" x-text="'₹' + product.price"></span>
+                                        <span class="text-xs text-gray-400 line-through" x-show="product.originalPrice" x-text="'₹' + product.originalPrice"></span>
+                                    </div>
+                                    <span class="text-[10px] text-emerald-600 font-bold">In Stock at Rama Mandi</span>
+                                </div>
+
+                                <button @click="addToCart(product)" :aria-label="'Add ' + product.name + ' to bag'"
+                                        class="bg-brand-100 hover:bg-brand-600 text-brand-800 hover:text-white px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shrink-0">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </template>
+            </div>
+
+            <!-- Empty Search State -->
+            <div x-show="filteredProducts.length === 0" x-cloak class="text-center py-16 bg-white rounded-3xl border border-dashed border-gray-300 mt-6 space-y-3">
+                <i class="fa-solid fa-magnifying-glass-slash text-4xl text-gray-300"></i>
+                <h3 class="font-bold text-gray-800 text-lg">No cosmetics or gifts found</h3>
+                <p class="text-xs text-gray-500">Try adjusting your search query or select another category filter.</p>
+                <button @click="searchQuery = ''; selectedCategory = 'all'" class="mt-2 text-xs font-bold text-brand-700 underline">Reset Filters</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Custom Gift Basket / Hamper Builder Tool -->
+    <section id="hamper-builder" class="py-16 md:py-24 bg-gradient-to-br from-brand-950 via-brand-900 to-gray-900 text-white relative overflow-hidden scroll-mt-24">
+        <!-- Floating Floral Overlay Effect -->
+        <div class="absolute -right-16 top-1/4 w-72 h-72 rounded-full bg-brand-500/20 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-gold-400 bg-brand-800/80 px-3.5 py-1 rounded-full border border-gold-500/30">
+                    <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Interactive Tool
+                </span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold">Build Your Custom Gift Hamper</h2>
+                <p class="text-brand-200 text-sm md:text-base">Design a personalized luxury hamper for Weddings, Birthdays, Karwa Chauth or Anniversaries. Choose the box style, handpick cosmetics & candles, add a personal greeting card message, and send directly to our WhatsApp!</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Steps & Selections (8 Cols) -->
+                <div class="lg:col-span-8 space-y-8">
+                    
+                    <!-- Step 1: Hamper Box Style -->
+                    <div class="bg-brand-900/60 backdrop-blur-md p-6 rounded-3xl border border-brand-700/50 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-gold-500 text-brand-950 font-black flex items-center justify-center text-sm">1</span>
+                            <h3 class="font-serif text-xl font-bold">Select Packaging Box / Basket Style</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <template x-for="box in hamperBoxes" :key="box.id">
+                                <div @click="selectedBox = box" 
+                                     @keydown.enter.prevent="selectedBox = box" @keydown.space.prevent="selectedBox = box"
+                                     role="radio" tabindex="0" :aria-checked="selectedBox.id === box.id"
+                                     :class="selectedBox.id === box.id ? 'border-gold-400 bg-brand-800/80 ring-2 ring-gold-400' : 'border-brand-700/60 bg-brand-950/40 hover:border-brand-500'"
+                                     class="p-4 rounded-2xl border cursor-pointer transition-all flex flex-col justify-between space-y-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400">
+                                    <div>
+                                        <div class="flex justify-between items-center font-bold text-sm text-gold-300 gap-2">
+                                            <span x-text="box.name"></span>
+                                            <i x-show="selectedBox.id === box.id" class="fa-solid fa-circle-check text-gold-400 shrink-0"></i>
+                                        </div>
+                                        <p class="text-xs text-brand-200 mt-1" x-text="box.desc"></p>
+                                    </div>
+                                    <div class="text-sm font-extrabold text-white pt-2 border-t border-brand-800" x-text="'+ ₹' + box.price"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Choose Cosmetics & Gift Items -->
+                    <div class="bg-brand-900/60 backdrop-blur-md p-6 rounded-3xl border border-brand-700/50 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-full bg-gold-500 text-brand-950 font-black flex items-center justify-center text-sm">2</span>
+                                <h3 class="font-serif text-xl font-bold">Pick Beauty Items & Gifts to Include</h3>
+                            </div>
+                            <span class="text-xs text-gold-400 font-semibold" x-text="selectedHamperItems.length + ' item(s) selected'"></span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-80 overflow-y-auto pr-1">
+                            <template x-for="item in hamperItemOptions" :key="item.id">
+                                <div @click="toggleHamperItem(item)"
+                                     @keydown.enter.prevent="toggleHamperItem(item)" @keydown.space.prevent="toggleHamperItem(item)"
+                                     role="checkbox" tabindex="0" :aria-checked="isHamperItemSelected(item.id)"
+                                     :class="isHamperItemSelected(item.id) ? 'border-brand-400 bg-brand-800/90' : 'border-brand-800 bg-brand-950/30 hover:border-brand-600'"
+                                     class="p-3.5 rounded-xl border cursor-pointer transition-all flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400">
+                                    <input type="checkbox" :checked="isHamperItemSelected(item.id)" tabindex="-1" aria-hidden="true" class="rounded text-brand-600 focus:ring-0 pointer-events-none shrink-0">
+                                    <img :src="item.image" :alt="item.name" loading="lazy" decoding="async" width="48" height="48" class="w-12 h-12 object-cover rounded-lg shrink-0">
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs font-bold text-white truncate" :title="item.name" x-text="item.name"></p>
+                                        <p class="text-[11px] text-brand-300" x-text="'₹' + item.price"></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Greeting Card & Custom Note -->
+                    <div class="bg-brand-900/60 backdrop-blur-md p-6 rounded-3xl border border-brand-700/50 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-full bg-gold-500 text-brand-950 font-black flex items-center justify-center text-sm">3</span>
+                            <h3 class="font-serif text-xl font-bold">Personal Message & Ribbon Customization</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="hamper-occasion" class="block text-xs font-bold text-brand-200 mb-1">Occasion Tag</label>
+                                <select id="hamper-occasion" x-model="hamperOccasion" class="dark-select w-full bg-brand-950 border border-brand-700 text-white rounded-xl p-2.5 text-base sm:text-sm focus:outline-none focus:border-gold-400">
+                                    <option value="Birthday Special">Birthday Celebration</option>
+                                    <option value="Bridal / Wedding Gift">Bridal / Wedding Gift</option>
+                                    <option value="Karwa Chauth / Festival">Karwa Chauth / Festival</option>
+                                    <option value="Anniversary Special">Anniversary Special</option>
+                                    <option value="Just Because / Pamper Box">Just Because / Pamper Box</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="hamper-ribbon" class="block text-xs font-bold text-brand-200 mb-1">Ribbon Accent Color</label>
+                                <select id="hamper-ribbon" x-model="hamperRibbon" class="dark-select w-full bg-brand-950 border border-brand-700 text-white rounded-xl p-2.5 text-base sm:text-sm focus:outline-none focus:border-gold-400">
+                                    <option value="Rose Gold Satin">Rose Gold Satin</option>
+                                    <option value="Royal Burgundy Silk">Royal Burgundy Silk</option>
+                                    <option value="Golden Sheen Ribbon">Golden Sheen Ribbon</option>
+                                    <option value="Classic Red Satin">Classic Red Satin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="hamper-note" class="block text-xs font-bold text-brand-200 mb-1">Greeting Card Note (Optional)</label>
+                            <textarea id="hamper-note" x-model="hamperNote" rows="2" maxlength="300" placeholder="Write a heartwarming message to print on the gift card..." 
+                                      class="w-full bg-brand-950 border border-brand-700 text-white rounded-xl p-3 text-base sm:text-sm focus:outline-none focus:border-gold-400"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Live Hamper Summary Box (4 Cols) -->
+                <div class="lg:col-span-4 lg:sticky lg:top-28">
+                    <div class="bg-white text-gray-900 rounded-3xl p-5 sm:p-6 shadow-2xl border-2 border-gold-400/50 space-y-6">
+                        <div class="border-b border-gray-100 pb-4 flex justify-between items-center">
+                            <div>
+                                <span class="text-[10px] uppercase font-black tracking-wider text-brand-600 bg-brand-50 px-2.5 py-0.5 rounded-full">Live Summary</span>
+                                <h4 class="font-serif text-2xl font-bold text-gray-900 mt-1">Your Gift Hamper</h4>
+                            </div>
+                            <i class="fa-solid fa-gift text-3xl text-brand-600"></i>
+                        </div>
+
+                        <!-- Box Choice -->
+                        <div class="text-xs space-y-2">
+                            <div class="flex justify-between items-center text-gray-600">
+                                <span>Box: <strong class="text-gray-900" x-text="selectedBox.name"></strong></span>
+                                <span class="font-bold text-gray-900" x-text="'₹' + selectedBox.price"></span>
+                            </div>
+                            <div class="flex justify-between items-center text-gray-600">
+                                <span>Occasion: <strong class="text-brand-700" x-text="hamperOccasion"></strong></span>
+                            </div>
+                            <div class="flex justify-between items-center text-gray-600">
+                                <span>Ribbon: <strong class="text-gray-900" x-text="hamperRibbon"></strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Selected Items List -->
+                        <div class="space-y-2 border-t border-gray-100 pt-3 max-h-40 overflow-y-auto">
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Included Items:</span>
+                            <template x-for="item in selectedHamperItems" :key="item.id">
+                                <div class="flex justify-between items-center text-xs gap-2">
+                                    <span class="text-gray-700 truncate" x-text="'• ' + item.name"></span>
+                                    <span class="font-semibold text-gray-900 shrink-0" x-text="'₹' + item.price"></span>
+                                </div>
+                            </template>
+                            <div x-show="selectedHamperItems.length === 0" class="text-xs text-gray-400 italic">No cosmetics added yet. Select from step 2!</div>
+                        </div>
+
+                        <!-- Personal Note Preview -->
+                        <div x-show="hamperNote.trim().length > 0" class="bg-brand-50 p-3 rounded-xl border border-brand-100 text-xs">
+                            <span class="font-bold text-brand-800 block mb-1">Card Note Preview:</span>
+                            <p class="text-gray-600 italic" x-text="'“' + hamperNote + '”'"></p>
+                        </div>
+
+                        <!-- Price Total -->
+                        <div class="border-t border-gray-100 pt-4 flex justify-between items-baseline">
+                            <span class="font-bold text-gray-700">Estimated Total:</span>
+                            <span class="text-2xl font-black text-brand-900" x-text="'₹' + hamperTotalCost"></span>
+                        </div>
+
+                        <!-- Submit Order via WhatsApp Button -->
+                        <button @click="sendHamperToWhatsApp()" 
+                                class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Send Order to Store WhatsApp
+                        </button>
+                        
+                        <p class="text-[11px] text-gray-400 text-center">Our team at Rama Mandi will confirm availability and prepare your gift!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Store Highlights Section -->
+    <section id="why-us" class="py-16 md:py-24 bg-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Image Composition -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80" alt="Cosmetics store interior in Jalandhar" width="800" height="450" loading="lazy" decoding="async" class="rounded-3xl shadow-xl w-full h-[320px] sm:h-[400px] lg:h-[450px] object-cover">
+                        <div class="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-gradient-to-tr from-brand-700 to-brand-600 text-white p-5 sm:p-6 rounded-3xl shadow-xl max-w-[85%] sm:max-w-xs space-y-1">
+                            <i class="fa-solid fa-award text-2xl sm:text-3xl text-gold-400 mb-1"></i>
+                            <h4 class="font-bold text-base sm:text-lg">Top Rated Store</h4>
+                            <p class="text-[11px] sm:text-xs text-brand-100">Rated 4.9 Stars on Google by Jalandhar residents for authenticity &amp; warm service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Highlights Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">
+                        Why Kiran Cosmetics?
+                    </span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Your Trusted Beauty &amp; Gifting Partner in Rama Mandi</h2>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                        At <strong class="text-gray-800 font-bold">Kiran Cosmetics and Gift Centre</strong>, we believe beauty care should be authentic, accessible, and enjoyable. Located conveniently on Talhan Road near Dhilwan, Rama Mandi, we bring top national and international brands right to your neighborhood.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-brand-50/60 border border-brand-100 space-y-2">
+                            <i class="fa-solid fa-shield-halved text-brand-600 text-xl"></i>
+                            <h4 class="font-bold text-gray-900 text-sm">100% Genuine Brands</h4>
+                            <p class="text-xs text-gray-600">Lakmé, Maybelline, L'Oréal, Nivea, Minimalist, Bella Vita & more.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-brand-50/60 border border-brand-100 space-y-2">
+                            <i class="fa-solid fa-box-open text-brand-600 text-xl"></i>
+                            <h4 class="font-bold text-gray-900 text-sm">Custom Gift Packaging</h4>
+                            <p class="text-xs text-gray-600">Bridal trunks, birthday hampers, corporate & festival baskets.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-brand-50/60 border border-brand-100 space-y-2">
+                            <i class="fa-solid fa-indian-rupee-sign text-brand-600 text-xl"></i>
+                            <h4 class="font-bold text-gray-900 text-sm">Wholesale & Retail Rates</h4>
+                            <p class="text-xs text-gray-600">Special discounts on bulk wedding gifts and parlor supplies.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-brand-50/60 border border-brand-100 space-y-2">
+                            <i class="fa-solid fa-clock text-brand-600 text-xl"></i>
+                            <h4 class="font-bold text-gray-900 text-sm">Open 7 Days a Week</h4>
+                            <p class="text-xs text-gray-600">8:00 AM to 9:00 PM uninterrupted customer service.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews & Testimonials Section -->
+    <section id="reviews" class="py-16 md:py-24 bg-brand-50/50 scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">
+                    Verified Feedback
+                </span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">What Local Customers Say</h2>
+                <div class="flex justify-center items-center gap-2 text-gold-500 font-bold text-lg">
+                    <span class="text-gray-900 text-base">4.9</span>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 font-semibold">(250+ Reviews on Google Maps)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-gold-500 text-xs" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-600 italic leading-relaxed">
+                            "Best cosmetic shop in Rama Mandi area! I ordered a customized bridal makeup gift hamper for my sister's wedding. The packaging was stunning and all products were 100% original."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-gray-100">
+                        <div class="w-9 h-9 rounded-full bg-brand-200 font-bold text-brand-900 flex items-center justify-center text-xs">
+                            PS
+                        </div>
+                        <div>
+                            <p class="font-bold text-xs text-gray-900">Priya Sharma</p>
+                            <p class="text-[10px] text-gray-400">Rama Mandi, Jalandhar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-gold-500 text-xs" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-600 italic leading-relaxed">
+                            "Very polite staff and genuine rates. They have a huge collection of Lakme and Maybelline items along with beautiful artificial jewellery sets. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-gray-100">
+                        <div class="w-9 h-9 rounded-full bg-brand-200 font-bold text-brand-900 flex items-center justify-center text-xs">
+                            MK
+                        </div>
+                        <div>
+                            <p class="font-bold text-xs text-gray-900">Manpreet Kaur</p>
+                            <p class="text-[10px] text-gray-400">Talhan Road, Jalandhar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-brand-100 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-gold-500 text-xs" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-gray-600 italic leading-relaxed">
+                            "I needed last-minute Karwa Chauth gift hampers. Kiran Cosmetics prepared 5 custom gift boxes within 2 hours. Extremely happy with their service!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-gray-100">
+                        <div class="w-9 h-9 rounded-full bg-brand-200 font-bold text-brand-900 flex items-center justify-center text-xs">
+                            RV
+                        </div>
+                        <div>
+                            <p class="font-bold text-xs text-gray-900">Ritu Verma</p>
+                            <p class="text-[10px] text-gray-400">Dhilwan, Jalandhar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Store Location, Hours & Inquiry Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white relative scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Info Box & Map (7 Cols) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600 bg-brand-100 px-3 py-1 rounded-full">
+                            Visit Our Store
+                        </span>
+                        <h2 class="font-serif text-3xl font-bold text-gray-900 mt-2">Location & Operating Hours</h2>
+                        <p class="text-xs sm:text-sm text-gray-600 mt-1">Conveniently located on Talhan Road near Rama Mandi. Drop in for personal shade matching & gift consultation.</p>
+                    </div>
+
+                    <!-- Store Contact Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 rounded-2xl bg-brand-50 border border-brand-100 space-y-2">
+                            <div class="flex items-center gap-2 text-brand-700 font-bold text-sm">
+                                <i class="fa-solid fa-location-dot"></i> Address
+                            </div>
+                            <p class="text-xs text-gray-700 font-medium leading-relaxed">
+                                8, Dhilwan, Talhan Road, Rama Mandi, Jalandhar - 144005, Punjab, India
+                            </p>
+                            <a href="https://maps.google.com/?cid=17685842643007552533" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-brand-700 hover:underline py-1.5">
+                                Open Google Maps <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-brand-50 border border-brand-100 space-y-2">
+                            <div class="flex items-center gap-2 text-brand-700 font-bold text-sm">
+                                <i class="fa-solid fa-clock"></i> Opening Hours
+                            </div>
+                            <p class="text-xs text-gray-700 font-medium">
+                                Monday - Sunday: <span class="font-bold text-gray-900">8:00 AM - 9:00 PM</span>
+                            </p>
+                            <p class="text-[11px] text-emerald-600 font-bold flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Open Today
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Map Container -->
+                    <div class="rounded-3xl overflow-hidden shadow-md border border-brand-200 h-64 sm:h-72 relative bg-gray-100">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.025068297441!2d75.6464924!3d31.3090055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a594c62894a0b%3A0xf570bc2e21ebbc15!2sKiran%20cosmetics%20and%20Gift%20centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            title="Kiran Cosmetics and Gift Centre location on Google Maps"
+                            class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Right Bulk Order / Inquiry Form (5 Cols) -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-brand-100 space-y-4">
+                        <div class="border-b border-gray-100 pb-3">
+                            <h3 class="font-serif text-xl font-bold text-gray-900">Send Store Inquiry</h3>
+                            <p class="text-xs text-gray-500">Ask about product availability, wholesale pricing or bulk wedding gift hampers.</p>
+                        </div>
+
+                        <form @submit.prevent="submitInquiryForm()" class="space-y-4">
+                            <div>
+                                <label for="inq-name" class="block text-xs font-bold text-gray-700 mb-1">Your Full Name <span class="text-brand-600">*</span></label>
+                                <input type="text" id="inq-name" x-model="inquiry.name" required placeholder="e.g. Simran Kaur" autocomplete="name"
+                                       class="w-full p-3 rounded-xl border border-gray-200 text-base sm:text-xs focus:outline-none focus:border-brand-500">
+                            </div>
+
+                            <div>
+                                <label for="inq-phone" class="block text-xs font-bold text-gray-700 mb-1">Mobile / WhatsApp Number <span class="text-brand-600">*</span></label>
+                                <input type="tel" id="inq-phone" x-model="inquiry.phone" required placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel"
+                                       class="w-full p-3 rounded-xl border border-gray-200 text-base sm:text-xs focus:outline-none focus:border-brand-500">
+                            </div>
+
+                            <div>
+                                <label for="inq-type" class="block text-xs font-bold text-gray-700 mb-1">Inquiry Category</label>
+                                <select id="inq-type" x-model="inquiry.type" class="w-full p-3 rounded-xl border border-gray-200 bg-white text-base sm:text-xs focus:outline-none focus:border-brand-500">
+                                    <option value="Product Availability">Product Shade / Brand Availability</option>
+                                    <option value="Custom Gift Hamper">Custom Gift Hamper Order</option>
+                                    <option value="Bulk Parlor Order">Bulk Parlor / Bridal Order</option>
+                                    <option value="General Question">General Question</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="inq-message" class="block text-xs font-bold text-gray-700 mb-1">Message / Requirements</label>
+                                <textarea id="inq-message" x-model="inquiry.message" rows="3" placeholder="Tell us what cosmetics or gift sets you are looking for..." 
+                                          class="w-full p-3 rounded-xl border border-gray-200 text-base sm:text-xs focus:outline-none focus:border-brand-500"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 bg-brand-700 hover:bg-brand-800 text-white font-bold rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.98]">
+                                <i class="fa-solid fa-paper-plane"></i> Send Inquiry via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Slide-Out Shopping Cart Drawer -->
+    <div x-show="cartDrawerOpen" x-transition.opacity class="fixed inset-0 z-50" x-cloak role="dialog" aria-modal="true" aria-label="Shopping bag">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" @click="cartDrawerOpen = false"></div>
+
+        <div class="fixed inset-y-0 right-0 w-full max-w-md flex">
+            <div class="w-full h-full bg-white shadow-2xl flex flex-col justify-between">
+                
+                <!-- Drawer Header -->
+                <div class="p-5 bg-brand-900 text-white flex justify-between items-center gap-3 shrink-0">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <i class="fa-solid fa-bag-shopping text-gold-400 shrink-0"></i>
+                        <h3 class="font-serif font-bold text-lg truncate">Your Shopping Bag</h3>
+                        <span class="bg-gold-500 text-brand-950 text-xs font-bold min-w-[24px] text-center px-2 py-0.5 rounded-full shrink-0" x-text="cartItemCount"></span>
+                    </div>
+                    <button @click="cartDrawerOpen = false" aria-label="Close shopping bag" class="text-white hover:text-gold-400 p-1 shrink-0">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div class="p-5 flex-1 overflow-y-auto space-y-4">
+                    <template x-for="item in cart" :key="item.id">
+                        <div class="flex gap-3 sm:gap-4 p-3 rounded-2xl bg-brand-50/50 border border-brand-100 items-center justify-between">
+                            <img :src="item.image" :alt="item.name" loading="lazy" decoding="async" class="w-14 h-14 sm:w-16 sm:h-16 object-cover rounded-xl border shrink-0">
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-bold text-xs text-gray-900 truncate" :title="item.name" x-text="item.name"></h4>
+                                <p class="text-[11px] text-brand-700 font-bold" x-text="'₹' + (item.price * item.qty)"></p>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <button @click="updateCartQty(item.id, -1)" :aria-label="'Decrease quantity of ' + item.name" class="w-7 h-7 rounded-md bg-white border border-gray-300 text-xs font-bold hover:bg-gray-100 active:bg-gray-200">-</button>
+                                    <span class="text-xs font-bold min-w-[16px] text-center" x-text="item.qty"></span>
+                                    <button @click="updateCartQty(item.id, 1)" :aria-label="'Increase quantity of ' + item.name" class="w-7 h-7 rounded-md bg-white border border-gray-300 text-xs font-bold hover:bg-gray-100 active:bg-gray-200">+</button>
+                                </div>
+                            </div>
+                            <button @click="removeFromCart(item.id)" :aria-label="'Remove ' + item.name + ' from bag'" class="text-gray-400 hover:text-rose-600 p-2 shrink-0">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </template>
+
+                    <!-- Empty Cart -->
+                    <div x-show="cart.length === 0" class="text-center py-12 space-y-3">
+                        <i class="fa-solid fa-bag-shopping text-4xl text-gray-300"></i>
+                        <p class="text-sm font-bold text-gray-700">Your bag is empty!</p>
+                        <p class="text-xs text-gray-400">Browse our store catalog and add cosmetics or gift hampers.</p>
+                        <button @click="cartDrawerOpen = false" class="text-xs font-bold text-brand-700 underline">Continue Shopping</button>
+                    </div>
+                </div>
+
+                <!-- Cart Footer & Checkout -->
+                <div x-show="cart.length > 0" class="p-5 bg-gray-50 border-t border-gray-200 space-y-3 shrink-0">
+                    
+                    <!-- Coupon Code Input -->
+                    <div class="flex gap-2">
+                        <input type="text" x-model="couponCode" @keydown.enter.prevent="applyCoupon()" placeholder="Discount Code (e.g. KIRAN10)" aria-label="Discount coupon code" class="flex-1 min-w-0 p-2.5 rounded-xl border border-gray-300 text-base sm:text-xs uppercase">
+                        <button @click="applyCoupon()" class="px-4 bg-brand-800 text-white text-xs font-bold rounded-xl hover:bg-brand-900 active:scale-95 transition-all">Apply</button>
+                    </div>
+                    <p x-show="couponApplied" class="text-[11px] text-emerald-600 font-bold">✓ Coupon KIRAN10 applied (10% OFF!)</p>
+
+                    <div class="space-y-1 text-xs pt-2">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Subtotal</span>
+                            <span class="font-bold text-gray-900" x-text="'₹' + cartSubtotal"></span>
+                        </div>
+                        <div x-show="couponApplied" class="flex justify-between text-emerald-600 font-bold">
+                            <span>Discount (10%)</span>
+                            <span x-text="'- ₹' + discountAmount"></span>
+                        </div>
+                        <div class="flex justify-between text-base font-black text-brand-900 pt-2 border-t border-gray-200">
+                            <span>Total Payable</span>
+                            <span x-text="'₹' + cartFinalTotal"></span>
+                        </div>
+                    </div>
+
+                    <button @click="checkoutWhatsApp()" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm active:scale-[0.98]">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Order Cart via WhatsApp
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div x-show="quickViewModalOpen" class="fixed inset-0 z-50 overflow-y-auto overscroll-contain" x-cloak role="dialog" aria-modal="true" aria-label="Product quick view">
+        <div class="flex items-center justify-center min-h-full px-4 py-4 sm:py-8 text-center sm:block">
+            <div class="fixed inset-0 bg-black/60 backdrop-blur-sm" @click="quickViewModalOpen = false"></div>
+
+            <div class="inline-block align-middle bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all w-full max-w-2xl">
+                <template x-if="selectedProduct">
+                    <div class="p-5 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 relative">
+                        <button @click="quickViewModalOpen = false" aria-label="Close quick view" class="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/90 text-gray-400 hover:text-gray-700 shadow transition-colors">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+
+                        <div class="h-56 sm:h-64 md:h-full rounded-2xl overflow-hidden bg-brand-50">
+                            <img :src="selectedProduct.image" :alt="selectedProduct.name" class="w-full h-full object-cover">
+                        </div>
+
+                        <div class="space-y-4 flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-brand-700 uppercase" x-text="selectedProduct.brand"></span>
+                                <h3 class="font-serif font-bold text-lg sm:text-xl text-gray-900 mt-1 pr-8" x-text="selectedProduct.name"></h3>
+                                <div class="flex items-center gap-2 text-xs text-gold-500 font-bold mt-1">
+                                    <i class="fa-solid fa-star"></i> <span x-text="selectedProduct.rating + ' Star Rating'"></span>
+                                </div>
+
+                                <p class="text-xs text-gray-600 mt-3 leading-relaxed" x-text="selectedProduct.fullDesc || selectedProduct.shortDesc"></p>
+
+                                <div class="mt-4 p-3 bg-brand-50 rounded-xl space-y-1">
+                                    <p class="text-[11px] text-gray-700 font-bold"><i class="fa-solid fa-shield-check text-brand-600 mr-1"></i> 100% Authentic Product</p>
+                                    <p class="text-[11px] text-gray-700 font-bold"><i class="fa-solid fa-store text-brand-600 mr-1"></i> Ready for Pickup in Rama Mandi</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-100 flex items-center justify-between gap-3">
+                                <div>
+                                    <span class="text-2xl font-black text-brand-900" x-text="'₹' + selectedProduct.price"></span>
+                                    <span class="text-xs text-gray-400 line-through block" x-show="selectedProduct.originalPrice" x-text="'₹' + selectedProduct.originalPrice"></span>
+                                </div>
+
+                                <button @click="addToCart(selectedProduct); quickViewModalOpen = false" class="bg-brand-700 hover:bg-brand-800 text-white px-5 py-3 rounded-xl text-xs font-bold transition-all flex items-center gap-2 active:scale-95 shrink-0">
+                                    <i class="fa-solid fa-bag-shopping"></i> Add to Bag
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay Drawer -->
+    <div x-show="searchOpen" x-transition.opacity class="fixed inset-0 z-50 bg-black/70 backdrop-blur-md p-4 sm:p-10 flex flex-col items-center overflow-y-auto overscroll-contain" x-cloak role="dialog" aria-modal="true" aria-label="Product search" @click.self="searchOpen = false">
+        <button @click="searchOpen = false" aria-label="Close search" class="absolute top-5 right-5 sm:top-6 sm:right-6 text-white text-2xl p-2 hover:text-gold-400 transition-colors">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="w-full max-w-2xl mt-10 sm:mt-12 mb-6 space-y-4">
+            <div class="relative">
+                <input type="search" x-ref="globalSearch" x-model="searchQuery" placeholder="Search for Lakme, Maybelline, Perfumes, Hampers..." aria-label="Search products"
+                       class="w-full bg-white text-gray-900 rounded-2xl p-4 pl-12 pr-4 text-base sm:text-base focus:outline-none focus:ring-2 focus:ring-gold-400 shadow-2xl">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg pointer-events-none"></i>
+            </div>
+
+            <div class="bg-white rounded-2xl p-3 sm:p-4 max-h-80 sm:max-h-96 overflow-y-auto space-y-2">
+                <template x-for="product in filteredProducts" :key="product.id">
+                    <button @click="openQuickView(product); searchOpen = false" class="w-full flex items-center gap-3 p-2 text-left hover:bg-brand-50 focus:bg-brand-50 rounded-xl cursor-pointer transition-colors">
+                        <img :src="product.image" :alt="product.name" loading="lazy" decoding="async" class="w-10 h-10 object-cover rounded-lg shrink-0">
+                        <div class="flex-1 min-w-0">
+                            <p class="text-xs font-bold text-gray-900 truncate" x-text="product.name"></p>
+                            <p class="text-[10px] text-brand-700 font-semibold" x-text="product.brand + ' • ₹' + product.price"></p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-gray-300 text-xs shrink-0"></i>
+                    </button>
+                </template>
+
+                <div x-show="filteredProducts.length === 0" class="text-center py-8 space-y-2">
+                    <i class="fa-solid fa-magnifying-glass-slash text-3xl text-gray-300"></i>
+                    <p class="text-sm font-bold text-gray-700">No matches for "<span x-text="searchQuery"></span>"</p>
+                    <p class="text-xs text-gray-400">Try a different keyword or browse the full catalog.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div x-show="toast.show" x-transition 
+         class="fixed safe-bottom-20 left-4 right-4 sm:safe-bottom-6 sm:left-auto sm:right-6 sm:max-w-xs z-[60] bg-brand-900 text-white px-4 sm:px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-bold border border-brand-700" x-cloak role="status" aria-live="polite">
+        <i class="fa-solid fa-circle-check text-gold-400 text-base shrink-0"></i>
+        <span x-text="toast.message"></span>
+    </div>
+
+    <!-- Floating WhatsApp Quick Button -->
+    <a href="https://wa.me/918699631881?text=Hello%20Kiran%20Cosmetics%2C%20I%20have%20an%20inquiry%20regarding%20products." 
+       target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"
+       class="fixed safe-bottom-4 sm:safe-bottom-6 left-4 sm:left-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-3 sm:p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition-transform hover:scale-110 active:scale-95">
+        <i class="fa-brands fa-whatsapp text-xl sm:text-2xl"></i>
+        <span class="hidden md:inline text-xs font-extrabold pr-1">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Col 1: Brand -->
+                <div class="col-span-2 lg:col-span-1 space-y-3">
+                    <div class="flex items-center gap-2 text-white">
+                        <i class="fa-solid fa-spa text-brand-500 text-xl"></i>
+                        <span class="font-serif font-bold text-xl">Kiran Cosmetics</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-gray-400">
+                        8, Dhilwan, Talhan Road, Rama Mandi, Jalandhar - 144005, Punjab. Your ultimate store for cosmetics, skincare & gift packaging.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-2">Explore Store</h4>
+                    <ul class="space-y-0.5 text-xs">
+                        <li><a href="#catalog" class="inline-block py-1.5 hover:text-white">Makeup &amp; Cosmetics</a></li>
+                        <li><a href="#catalog" class="inline-block py-1.5 hover:text-white">Skincare &amp; Serums</a></li>
+                        <li><a href="#catalog" class="inline-block py-1.5 hover:text-white">Perfumes &amp; Deos</a></li>
+                        <li><a href="#hamper-builder" class="inline-block py-1.5 hover:text-white">Custom Gift Hampers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact Details -->
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-2">Store Contact</h4>
+                    <ul class="space-y-0.5 text-xs">
+                        <li class="py-1.5"><i class="fa-solid fa-phone text-brand-500 mr-2"></i> <a href="tel:+918699631881" class="hover:text-white">+91 86996 31881</a></li>
+                        <li class="py-1.5"><i class="fa-solid fa-clock text-brand-500 mr-2"></i> 8:00 AM - 9:00 PM (Daily)</li>
+                        <li class="py-1.5"><i class="fa-solid fa-location-dot text-brand-500 mr-2"></i> Rama Mandi, Jalandhar</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Store Rating -->
+                <div class="space-y-2">
+                    <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-1">Customer Rating</h4>
+                    <div class="flex text-gold-400 text-sm" aria-label="4.9 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-white font-bold">4.9 / 5.0 Rating</p>
+                    <p class="text-[11px] text-gray-500">Top-rated cosmetic store in Rama Mandi & Dhilwan Jalandhar.</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-gray-900 text-center text-xs text-gray-600 flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>© 2026 Kiran Cosmetics and Gift Centre. All Rights Reserved.</p>
+                <p>Designed for Jalandhar Local Beauty & Gifting Needs</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Application Logic (Alpine.js) -->
+    <script src="js/app.js"></script>
+</body>
+</html>

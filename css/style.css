@@ -1,0 +1,87 @@
+/* ============================================================
+   Kiran Cosmetics & Gift Centre
+   Custom stylesheet  ->  css/style.css
+   ============================================================ */
+
+/* --- Fix 1: hide Alpine-bound overlays before Alpine initialises (prevents FOUC) --- */
+[x-cloak] { display: none !important; }
+
+/* --- Fix 2: `overflow-x: clip` on <html> instead of <body>.
+body{overflow-x:hidden} creates a scroll container which silently
+breaks the sticky header on Chrome. `clip` does not. --- */
+html { overflow-x: clip; }
+body.no-scroll { overflow: hidden !important; }
+
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+background-color: #fdfbf7;
+}
+.font-serif {
+font-family: 'Playfair Display', serif;
+}
+.glass-nav {
+background: rgba(255, 255, 255, 0.88);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+}
+.glass-card {
+background: rgba(255, 255, 255, 0.75);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+border: 1px solid rgba(242, 121, 145, 0.2);
+}
+.bg-pattern {
+background-image: radial-gradient(rgba(242, 121, 145, 0.12) 0.5px, transparent 0.5px), radial-gradient(rgba(242, 121, 145, 0.12) 0.5px, #fdfbf7 0.5px);
+background-size: 20px 20px;
+background-position: 0 0, 10px 10px;
+}
+
+/* --- Fix 9: keep content clear of notches / home-indicator bars on modern phones --- */
+:root {
+box-sizing: border-box;
+padding-top: env(safe-area-inset-top, 0px);
+padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+.safe-bottom-4 { bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); }
+.safe-bottom-6 { bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px)); }
+.safe-bottom-20 { bottom: calc(5rem + env(safe-area-inset-bottom, 0px)); }
+
+/* --- Fix 3: `.scrollbar-none` was used in markup but never defined --- */
+.scrollbar-none {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+/* --- Fix 4: keyboard focus was invisible (inputs had focus:outline-none) --- */
+:focus-visible {
+outline: 2px solid #b01a40;
+outline-offset: 2px;
+border-radius: 6px;
+}
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+outline: 2px solid #b01a40;
+outline-offset: 1px;
+}
+
+/* --- Fix 5: dark <select> dropdown options rendered white-on-white on Windows --- */
+select.dark-select option { background: #45091a; color: #ffffff; }
+
+/* --- Fix 6: prevent iOS/Android tap highlight flash on cards & buttons --- */
+a, button, input, select, textarea, [role="button"], [role="checkbox"] { -webkit-tap-highlight-color: transparent; }
+
+/* --- Fix 7: scrollbar defaults --- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #fdf2f4; }
+::-webkit-scrollbar-thumb { background: #f27991; border-radius: 4px; }
+
+/* --- Fix 8: respect reduced-motion users --- */
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto !important; }
+*, *::before, *::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+}
